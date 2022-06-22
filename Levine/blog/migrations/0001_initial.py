@@ -20,6 +20,7 @@ class Migration(migrations.Migration):
                 ('text', models.TextField()),
                 ('date_created', models.DateTimeField(auto_now_add=True)),
                 ('date_published', models.DateTimeField(default=django.utils.timezone.now)),
+                ( 'author', models.ForeignKey(get_user_model(),null=True)
             ],
         ),
     ]
